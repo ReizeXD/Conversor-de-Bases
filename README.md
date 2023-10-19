@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://ufal.br/ufal/comunicacao/identidade-visual/brasao/por-extenso/ufal-extenso-branca-fundo-transparente.png">
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fufal.br%2Fufal%2Fcomunicacao%2Fidentidade-visual&psig=AOvVaw2EBDmOPgKMpGzO9-iECW7B&ust=1697842887843000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID7v-abg4IDFQAAAAAdAAAAABAE">
 </p>
 
 Olá, eu sou da Universidade Federal de Alagoas (UFAL) e criei  este projeto para a disciplina de Introdução a Ciência da Computação (ICC)) como parte da nota da AB2.
@@ -41,7 +41,12 @@ Para executar o projeto em sua máquina, siga os passos abaixo:
   ```bash
   cd Conversor-de-Bases
   ```
-  3. Executar o arquivo "tela.py"
+3. Instalando as dependências:
+  ```bash
+  pip install -r requirements.txt
+  ```
+  Obs.: É necessário ter o pip instalado em sua máquina
+4. Executar o arquivo "tela.py"
 ------------------------------------------------------------------------------------------------
 
 ## Observação
