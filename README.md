@@ -41,13 +41,7 @@ Para executar o projeto em sua máquina, siga os passos abaixo:
   ```bash
   cd Conversor-de-Bases
   ```
-3. Instalando as dependências:
-  ```bash
-  pip install -r requirements.txt
-  ```
-  Obs.: É necessário ter o pip instalado em sua máquina
-  
-  4. Executar o arquivo "tela.py"
+  3. Executar o arquivo "tela.py"
 ------------------------------------------------------------------------------------------------
 
 ## Observação
