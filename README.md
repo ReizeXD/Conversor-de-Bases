@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fufal.br%2Fufal%2Fcomunicacao%2Fidentidade-visual&psig=AOvVaw2EBDmOPgKMpGzO9-iECW7B&ust=1697842887843000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID7v-abg4IDFQAAAAAdAAAAABAE">
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fufal.br%2Fufal%2Fcomunicacao%2Fidentidade-visual&psig=AOvVaw3XLxGOe9c9zORGo04GXO2I&ust=1697843051533000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjMmbKcg4IDFQAAAAAdAAAAABAR">
 </p>
 
 Olá, eu sou da Universidade Federal de Alagoas (UFAL) e criei  este projeto para a disciplina de Introdução a Ciência da Computação (ICC)) como parte da nota da AB2.
