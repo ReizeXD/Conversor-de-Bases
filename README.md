@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/7cb5d20aa6494b45fc1819ddf587be1075e5537d7f0ced72348582f1b2715280/68747470733a2f2f656e637279707465642d74626e322e677374617469632e636f6d2f696d616765733f713d74626e3a414e643947635170503745777a73664b72647778424970434245324e6235596a5946544c5941593444585f396442525a53542d356f5a2d4d">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Bras%C3%A3o_Ufal.png">
 </p>
 
 Olá, eu sou da Universidade Federal de Alagoas (UFAL) e criei  este projeto para a disciplina de Introdução a Ciência da Computação (ICC)) como parte da nota da AB2.
