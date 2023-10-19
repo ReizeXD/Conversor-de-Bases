@@ -1,10 +1,12 @@
 import customtkinter
 from tkinter import *
+import tkinter as tk
 from CTkMessagebox import CTkMessagebox
-from PIL import Image, ImageTk
-from principal import *
-teste=''
 
+from principal import *
+
+#VARIÁVEIS
+teste=''
 is_inteiro=True
 co0 = "#2e2d2b"  # Preta
 co1 = "#feffff"  # Branca   
@@ -19,8 +21,6 @@ co10= "#146C94"   # azul
 
 root=customtkinter.CTk()
 
-
-
 class validation():
     def validade_Entry(self,text):
             if text=="":return True
@@ -30,7 +30,6 @@ class validation():
                 return False
             return 1<=value<=36
     
-
 class conversor_de_bases(validation):
     def __init__(self):
         self.root=root
@@ -41,11 +40,13 @@ class conversor_de_bases(validation):
         self.widgets_frame2()
         customtkinter.set_appearance_mode("dark")
         root.mainloop()
+    
     def tela(self):
         self.root.title("Conversor de Bases")
         self.root.configure(background="white")
         self.root.geometry("500x300")
         self.root.resizable(False,False)
+    
     def frames_de_tela(self):
         self.frame_1=customtkinter.CTkFrame(self.root,bg_color=co6,fg_color=co0, 
                                             corner_radius=15,border_width=2,border_color=co6)
@@ -57,6 +58,7 @@ class conversor_de_bases(validation):
 
     def widgets_frame1(self):
         global inteiro
+        #FUNÇÃO SOBRE
         def switch():       
             global is_inteiro
             if is_inteiro: 
@@ -115,14 +117,26 @@ class conversor_de_bases(validation):
                         chamar1=main_inteiro(numeroint,baseini,basefinal)
                         chamar2=main_reais(numerodec,baseini,basefinal)
                         chamar=str(chamar1)+","+str(chamar2)
-                        if chamar==False:
+                        if chamar1==False or chamar1==False:
                             CTkMessagebox(title="Error", message="Esse número não é compaivel com a respectiva base!"
                         , icon="cancel")
                         else:
                             teste=chamar
                             self.resultentry.delete(0,END)
                             self.resultentry.insert(END,teste)
-        
+        #FUNÇÃO SOBRE
+        def sobre():
+            Help=customtkinter.CTk()
+            Help.title("Sobre o projeto:")
+            Help.geometry("450x300")
+            Help.configure(background=co0)
+            Help.resizable(width=FALSE, height=FALSE)
+
+            texto="Universidade Federal de Alagoas-UFAL\n\nProjeto Conversor de Bases\n\nDisciplina: Introdução a Ciência da Computação (ICC)\n\n\n\n\n\n\nAnderson da Silva Passos"
+            canvas=customtkinter.CTkCanvas(Help, width= 500, height= 350, bg=co0)
+            canvas.create_text(220, 130, text=texto, fill=co1, font=('Helvetica 10 bold'))
+            canvas.pack() 
+            Help.mainloop()
         #BASES              
         self.baseini=customtkinter.CTkEntry(self.frame_2,placeholder_text="Base Inicial",
                                               placeholder_text_color=co1, justify=CENTER)
@@ -149,10 +163,11 @@ class conversor_de_bases(validation):
             self.numerofloat=customtkinter.CTkEntry(self.frame_2, placeholder_text="Decimal",
                                                 placeholder_text_color=co1,justify=CENTER)
             self.numerofloat.place(x=350,y=20,relwidth=0.13)
+
+
+        #RESULTADO
         self.resultado=customtkinter.CTkLabel(self.frame_2,text="Resultado",anchor=NW,
                                               font=("Arial",15),justify=CENTER)
-        
-        #RESULTADO
         self.resultado.place(x=310,y=58)
         self.resultentry=customtkinter.CTkEntry(self.frame_2,justify=CENTER)
         self.resultentry.delete(0,END)
@@ -161,6 +176,10 @@ class conversor_de_bases(validation):
         #BOTÃO CONVERTER
         self.converter=customtkinter.CTkButton(self.frame_2,text="Converter", command=inserir)
         self.converter.place(x=170,y=130)
+        #BOTÃO SOBRE
+        self.help=customtkinter.CTkButton(self.frame_2,text="?", command=sobre)
+        self.help.place(x=450,y=160,relwidth=0.05, relheight=0.08)
+    
     def valide_entradas(self):
         self.validade=self.root.register(self.validade_Entry)
     

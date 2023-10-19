@@ -11,9 +11,6 @@ def qualquer_dez(n,base_qualquer_origem):
         contador+=1
     return decimal
 
-def limpar_lista():
-    global lista
-    lista=[]
         
 lista=[]
 def dez_qualquer(n,base_qualquer_destino):
@@ -27,29 +24,6 @@ def dez_qualquer(n,base_qualquer_destino):
         lista.append(str(n))
     return lista
     
-def converter_letras(lista2,base_qualquer_destino):
-    if base_qualquer_destino>10:
-        for k,v in enumerate(lista2):
-            lista2[k]=dic[int(v)]
-    return lista2
-
-def ConvertToList(lista1):
-    nome=''
-    for c in lista1:
-        nome+=str(c)+''
-    return nome
-
-def Verificar_elementos(n,base1):
-    condicao=True
-    verificar=[]
-    n=str(n)
-    for elementos in range(base1):
-        verificar.append(dic[elementos])
-    for string in n:
-        if not string in verificar:
-            condicao=False
-            break
-    return condicao
 def dez_qualquer_fracionado(n,base_qualquer_destino):
     n=str(n)
     algarismos=len(n)
@@ -84,3 +58,31 @@ def qualquer_dez_fracionado(n,base_qualquer_origem):
     for algarismo in fracao:
         q+=algarismo+''
     return q
+
+def limpar_lista():
+    global lista
+    lista=[]
+
+def converter_letras(lista2,base_qualquer_destino):
+    if base_qualquer_destino>10:
+        for k,v in enumerate(lista2):
+            lista2[k]=dic[int(v)]
+    return lista2
+
+def ConvertToStr(lista1):
+    nome=''
+    for c in lista1:
+        nome+=str(c)+''
+    return nome
+
+def Verificar_elementos(n,base1):
+    condicao=True
+    verificar=[]
+    n=str(n)
+    for elementos in range(base1):
+        verificar.append(dic[elementos])
+    for string in n:
+        if not string in verificar:
+            condicao=False
+            break
+    return condicao
